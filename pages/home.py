@@ -27,7 +27,7 @@ layout = html.Div([
     html.Div([
         circles,
         html.Div([
-            html.Img(src = 'assets/logo/siam.png', className = "logo"),
+            html.Img(src = 'assets/logo/siam.PNG', className = "logo"),
             html.Img(src = 'assets/logo/northwestern.png', className = "logo")
         ], className = "logo-container"),
         html.Div([
