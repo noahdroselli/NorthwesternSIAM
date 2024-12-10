@@ -99,7 +99,7 @@ layout = html.Div([
                 html.H2('Treasurer', className = "bm-role")
             ], className = "bm-image", href = "http://dyn.phys.northwestern.edu/group.html#:~:text=smith2027%40u.n...-,Pietro%20Zanin,-Research%3A%20Synchronization%20Dynamics", target = "_blank"),
             html.A([
-                html.Img(src = 'assets/people/liam.jpg', className = "img"),
+                html.Img(src = 'assets/people/liam.JPG', className = "img"),
                 html.H1('Liam O\'Connor', className = "bm-name"),
                 html.H2('Academic Chair', className = "bm-role")
             ], className = "bm-image", href = "https://www.mccormick.northwestern.edu/applied-math/people/graduate-students.html#:~:text=Advisor%3A%20Diego%20Klabjan).-,Liam%20O%27Connor,-Email%20Liam", target = "_blank"),
