@@ -2,4 +2,4 @@ dash
 gunicorn
 pandas
 dash-tools
-smptlib
+smtplib
