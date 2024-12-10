@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    /* BLUES */
+    --blue-tint-b: #55F6BE ;
+    --blue-tint-a: #55E6BE ;
+    --blue-main-0: #55D6Be;
+    --blue-shade-a: #55C6BE;
+    --blue-shade-b: #55B6BE;
+
+    /* GREENS */
+    --green-tint-b: #CCFCD9;
+    --green-tint-a: #BCFCD9;
+    --green-main-0: #ACFCD9;
+    --green-shade-a: #ACECD9;
+    --green-shade-b: #ACDCD9;
+
+    /* PURPLES */
+    --purple-tint-b: #7D5BA6;
+    --purple-tint-a: #7D3BA6;
+    --purple-main-0: #7D1BA6;    
+    --purple-shade-a: #7D7BA6;
+    --purple-shade-b: #7D9BA6;
+
+    /* GREYS */
+    --white: #FFFFFF;
+    --lightest-grey: #DDDDDD;
+    --light-grey: #AAAAAA;
+    --grey: #888888;
+    --dark-grey: #555555;
+    --darker-grey: #333333;
+    --black: #111111;
+
+    /* REDS */
+    --red-tint-b: #FC4471;
+    --red-tint-a: #FC5471;
+    --red-main-0: #FC6471;
+    --red-shade-a: #FC7471;
+    --red-shade-b: #FC8471;
+
+    --circle-size: 175px;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    color: var(--dark-grey);
+    font-size: 1rem;
+    font-family: "Raleway";
+    text-decoration: none;
+}
+
+.italics {
+    font-style: italic;
+}
+
+.landing-page {
+    height: 100vh;
+    position: relative;
+}
+
+.lp-text {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.lp-title {
+    font-size: 7rem;
+    font-family: "Bodoni Moda";
+    color: var(--darker-grey);
+    font-weight: 400;
+}
+
+.lp-subtitle {
+    font-size: 2rem;
+    font-weight: 200;
+    font-family: "Raleway";
+    color: var(--dark-grey)
+}
+
+.button-list {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 5vh;
+}
+
+.BUTTON {
+    background-color: var(--purple-main-0);
+    width: 10vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--purple-main-0);
+}
+
+.BUTTON:hover {
+    color: var(--lightest-grey);
+    text-decoration: underline solid 1px black;
+    cursor: pointer;
+    background-color: var(--purple-tint-b);
+    border: 1px solid black; 
+}
+
+.rule {
+    position: absolute;
+    right: 0;
+    z-index: 5;
+}
+
+.RULE-1 {
+    border: 1px solid var(--blue-shade-a);
+    top: 78vh;
+    width: 50vw;
+}
+
+.RULE-2 {
+    border: 1px solid var(--blue-shade-b);
+    top: 80vh;
+    width: 56vw;
+}
+
+.RULE-3 {
+    border: 1px solid var(--red-tint-a);
+    top: 82vh;
+    width: 62vw;
+}
+
+.about-us {
+    height: 80vh;
+}
+
+.img {
+    width: 10vw;
+    height: 10vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.flex-container {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.board-members {
+    display: grid; 
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+    gap: 50px;
+}
+
+.bm-image {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightest-grey);
+    padding: 30px;
+    border-radius: 10px;
+    gap: 5px;
+    border: 3px solid var(--dark-grey);
+    text-align: center;
+}
+
+.bm-image:hover {
+    background-color: var(--light-grey);
+    border: 3px solid var(--red-tint-b);
+}
+
+.bm-name {
+    color: var(--purple-main-0);
+    font-size: 1.5rem;
+    font-family: "Bodoni Moda";
+}
+
+.bm-role {
+    color: var(--blue-shade-b);
+}
+
+.bm-image:hover .bm-role{
+    color: var(--dark-grey)
+}
+
+
+.FULL-CONTENT {
+    background-color: var(--lightest-grey);
+}
+
+.circle {
+    width: var(--circle-size); 
+    height: var(--circle-size); 
+    border-radius: 100%;
+    position: absolute;
+}
+
+.circle-00 {
+    background-color: var(--blue-shade-a);
+    left: 100px;
+    top: calc(-50px + var(--circle-size)*0);
+}
+
+.circle-01 {
+    background-color: var(--blue-shade-b);
+    left: 100px; 
+    top: calc(-50px + var(--circle-size)*1 + 10px);
+}
+
+.circle-02 {
+    background-color: var(--blue-main-0);
+    left: 100px; 
+    top: calc(-50px + var(--circle-size)*2 + 20px);
+}
+
+.circle-03 {
+    background-color: var(--blue-tint-a);
+    left: 100px; 
+    top: calc(-50px + var(--circle-size)*3 + 30px);
+}
+
+.circle-04 {
+    background-color: var(--blue-tint-b);
+    left: 100px; 
+    top: calc(-50px + var(--circle-size)*4 + 40px);
+}
+
+.circle-10 {
+    background-color: var(--green-shade-a);
+    left: calc(100px + var(--circle-size) + 10px);
+    top: calc(50px + var(--circle-size)*-1);
+}
+
+.circle-11 {
+    background-color: var(--green-shade-b);
+    left: calc(100px + var(--circle-size) + 10px);
+    top: calc(50px + var(--circle-size)*0 + 10px);
+}
+
+.circle-12 {
+    background-color: var(--green-main-0);
+    left: calc(100px + var(--circle-size) + 10px);
+    top: calc(50px + var(--circle-size)*1 + 20px);
+}
+
+.circle-13 {
+    background-color: var(--green-tint-a);
+    left: calc(100px + var(--circle-size) + 10px); 
+    top: calc(50px + var(--circle-size)*2 + 30px);
+}
+
+.circle-14 {
+    background-color: var(--green-tint-b);
+    left: calc(100px + var(--circle-size) + 10px); 
+    top: calc(50px + var(--circle-size)*3 + 40px);
+}
+
+.underline {
+    text-decoration: underline black wavy;
+    color: var(--purple-main-0)
+}
+
+.au-title {
+    font-size: 4rem;
+    font-family: "Bodoni Moda";
+    color: var(--purple-main-0);
+    font-weight: 400;
+}
+
+.au-hr1 {
+    position: relative;
+    border: 1px solid var(--red-tint-a);
+    top: 18vh;
+    left: 50vw;
+    width: 50vw;
+}
+
+.au-hr2 {
+    position: relative;
+    border: 1px solid var(--red-shade-b);
+    top: 20vh;
+    left: 55vw;
+    width: 55vw;
+}
+
+.text-wis, .text-mem {
+    color: var(--black);
+}
+
+.wis {
+    width: 40vw;
+    position: relative;
+    top: 0vh;
+    left: 50vw;
+    text-align: right;
+}
+
+.mem {
+    width: 40vw;
+    position: relative; 
+    top: 0vh; 
+    left: 20vw;
+}
+
+.lp-circles {
+    z-index: 0;
+    position: relative;
+}
+
+.lp-text {
+    z-index: 1;
+    position: relative;
+}
+
+.CIRCLE-2 {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 100%;
+    position: absolute; 
+    z-index: 0;
+    top: 120vh;
+    left: 10vw;
+    background-color: var(--blue-shade-b);
+}
+
+.CIRCLE-1 {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    position: absolute; 
+    z-index: 0;
+    top: 95vh;
+    right: 5vw;
+    background-color: var(--red-shade-b);
+}
+
+.bm-title {
+    font-size: 5rem;
+    color: var(--purple-main-0);
+    font-family: "Bodoni Moda";
+    text-decoration: underline solid 4px var(--blue-shade-a);
+}
+
+.bm-subtitle {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: var(--light-grey)
+}
+
+.PREVIOUS-MEMBERS {
+    margin-top: 50px;
+    background-color: var(--purple-main-0);
+    color: var(--white);
+    border: 1px solid black;
+    padding: 10px;
+    width: 20vw;
+    border-radius: 10px;
+    text-align: center;
+}
+.PREVIOUS-MEMBERS:hover {
+    background-color: var(--purple-tint-b);
+    cursor: pointer;
+    border: 1px solid var(--purple-tint-a)
+}
+
+.FORM {
+    width: 30vw;
+}
+
+.FORM-CONTACT {
+    color: var(--purple-main-0); 
+    font-size: 1.5rem;
+    text-align: end;
+}
+
+.FORM-ROW {
+    padding-bottom: 2vh;
+}
+
+.FORM-1 {
+    display: flex; 
+    justify-content: space-between;
+}
+
+.ALERT-FOR-EMAIL {
+    position: absolute; 
+    bottom: 10px; 
+    left: 10px; 
+    background-color: var(--red-main-0);
+    color: var(--black);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-label-1, .form-label-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purple-main-0);
+    border-radius: 10px;
+    color: var(--white);
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.form-input-1, .form-input-2 {
+    border-radius: 10px;
+}
+
+.form-input-1:focus, .form-input-2 {
+    outline-color: var(--blue-main-0);
+}
+
+.form-label-1 {
+    width: 3vw;
+    margin-right: 1vw;
+}
+
+.form-input-1 {
+    width: 100%;
+}
+
+.form-input-2 {
+    width: 100%;
+    height: 10vh;
+    resize: none;
+    margin-top: 2vh;
+}
+
+.form-submit {
+    width: 100%;
+    height: 5vh;
+    background-color: var(--purple-main-0);
+    color: var(--white);
+    border-radius: 10px;
+    border: var(--black) 1px solid;
+}
+
+.form-submit:hover {
+    cursor: pointer;
+    background-color: var(--purple-shade-a);
+    color: var(--green-main-0);
+    border: var(--green-main-0) 1px solid; 
+}
+
+.form-last-statement {
+    font-size: 0.8rem;
+    color: var(--purple-main-0);
+    text-align: center;
+}
+
+.contact {
+    width: 100vw;
+    padding: 5vw;
+    position: relative;
+    padding-top: 10vh;
+}
+
+.circle-end {
+    width: var(--circle-size);
+    height: var(--circle-size);
+    border-radius: 100%;
+    position: absolute;
+}
+
+.CIRCLE-END-01 {
+    background-color: var(--blue-main-0);
+    top: 10vh; 
+    left: 40vw;
+}
+
+.CIRCLE-END-02 {
+    background-color: var(--blue-tint-b);
+    top: 10vh; 
+    left: 55vw;
+}
+
+.CIRCLE-END-03 {
+    background-color: var(--blue-tint-a);
+    top: 10vh; 
+    left: 70vw;
+}
+
+.CIRCLE-END-04 {
+    background-color: var(--blue-shade-a);
+    top: 10vh; 
+    left: 85vw;
+}
+
+.CIRCLE-END-11 {
+    background-color: var(--green-shade-a);
+    top: 35vh; 
+    left: 47.5vw;
+}
+
+.CIRCLE-END-12 {
+    background-color: var(--red-main-0);
+    top: 35vh; 
+    left: 62.5vw;
+}
+
+.CIRCLE-END-13 {
+    background-color: var(--green-shade-b);
+    top: 35vh; 
+    left: 77.5vw;
+}
+
+.CIRCLE-END-14 {
+    background-color: var(--green-tint-a);
+    top: 35vh; 
+    left: 92.5vw;
+}
+
+.members-year {
+    font-size: 4rem;
+    font-family:  "Bodoni Moda";
+}
+
+.members-container {
+    display: grid; 
+    grid-template-columns: 20vw 20vw 20vw 20vw;
+}
+
+.logo-container {
+    display: flex;
+    position: absolute;
+    gap: 5vw;
+    right: 5vw;
+    top: 5vh;
+}
+
+.logo {
+    height: 10vh;
+}
+
+.conference-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background-color: var(--green-shade-a);
+}
+
+.conference {
+    font-size: 10rem;
+    font-family: "Bodoni Moda";
+    color: var(--purple-main-0);
+    text-decoration: wavy 1px black solid;
+    padding-bottom: 5vh;
+}
+
+.conference-circle {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 100%;
+    position: absolute;
+}
+
+.conference-info {
+    font-size: 2rem;
+    padding-bottom: 10vh;
+    width: 50vw;
+    text-align: center;
+}
+
+.CC-01 {
+    background-color: var(--blue-shade-a);
+    top: 50px; 
+    right: calc(100px - 10rem);
+}
+
+.CC-02 {
+    background-color: var(--blue-main-0);
+    top: calc(50px + 10rem + 50px);
+    right: calc(100px - 10rem);
+}
+
+.CC-03 {
+    background-color: var(--red-main-0);
+    top: calc(50px + 20rem + 100px);
+    right: calc(100px - 10rem);
+}
+
+.CC-10 {
+    background-color: var(--blue-shade-b);
+    top: calc(0rem - 50px);
+    right: 100px;
+}
+
+.CC-11 {
+    background-color: var(--green-tint-b);
+    top: calc(10rem); 
+    right: 100px;
+}
+
+.CC-12 {
+    background-color: var(--green-tint-a);
+    top: calc(20rem + 50px);
+    right: 100px;
+}
+
+.CC-13 {
+    background-color: var(--green-shade-b);
+    top: calc(30rem + 100px);
+    right: 100px;
+}
+
+.events-title {
+    font-size: 5rem;
+    color: var(--purple-main-0);
+    font-family: "Bodoni Moda";
+}
+
+.events-page {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--light-grey);
+    height: 100vh;
+    gap: 20px;
+}
+
+.event-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.event-example {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--darker-grey)
+}
+
+.events-container {
+    display: grid; 
+    grid-template-columns: 25vw 25vw;
+    gap: 5vw;
+}
