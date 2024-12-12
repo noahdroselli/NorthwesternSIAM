@@ -259,8 +259,6 @@ html {
 }
 
 /* PREVIOUS MEMBERS PAGE */
-
-
 .o-list {
     margin: 2rem;
     text-align: center;
@@ -645,10 +643,9 @@ html {
     top: calc(var(--circle-size) + 10px);
 }
 
-.CIRCLE-END-1, .CIRCLE-END-0 {
+.OTHER-CIRCLES {
     display: none;
 }
-
 
 /* MEDIA QUERIES */
 
@@ -666,10 +663,6 @@ html {
     }
 
     .logo {
-        display: block;
-    }
-
-    .CIRCLE-END-1, .CIRCLE-END-0 {
         display: block;
     }
 
@@ -727,6 +720,10 @@ html {
 
     .logo:nth-child(1) {
         grid-column-start: 5;
+    }
+
+    .OTHER-CIRCLES {
+        display: block;
     }
 
     .circle-0 {
