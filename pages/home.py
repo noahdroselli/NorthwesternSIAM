@@ -1,4 +1,4 @@
-import dash, smtplib, matplotlib
+import dash, smtplib
 from dash import Dash, html, dash_table, dcc, callback, Output, Input, State
 import smtplib 
 import dash_bootstrap_components as dbc
