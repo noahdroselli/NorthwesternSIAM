@@ -1,11 +1,7 @@
-import dash, smtplib, matplotlib
+import dash, smtplib
 from dash import Dash, html, dash_table, dcc, callback, Output, Input, State
-import dash_bootstrap_components as dbc
-import plotly.express as px
 import smtplib 
 from email.message import EmailMessage
-import matplotlib.pyplot as plt
-import numpy as np
 
 dash.register_page(
     __name__,
