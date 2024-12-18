@@ -27,7 +27,7 @@ layout = html.Div([
         html.H1(["Conference!"], className = "conference"),
         html.H2(["Nothing to see here...yet!"]),
         html.H2(["Northwestern will be hosting the 2025 SIAM Chicago-Area conference. Come back to this webpage in the future for more information."], className = "conference-info"),
-        html.H3(["If you have any questions, please reach out to Christina Catlett (ccatlett@u.northwestern.edu) and Elisheva Siegfried (elisheva.siegfried@northwestern.edu); or use the ", html.A("Contact Us", href = "https://northwesternsiam.onrender.com/#contactus", className = "underline"), " form and we will put you in contact with them."], className = "chair-info"),
+        html.H3(["If you have any questions, please reach out to Christina Catlett (ccatlett@u.northwestern.edu) and Elisheva Siegfried (elisheva.siegfried@northwestern.edu); or use the ", html.A("Contact Us", href = "https://northwesternsiam.onrender.com/#contactus:~:text=Previous%20Board%20Members-,Contact%20Us!,-Name%3A", className = "underline"), " form and we will put you in contact with them."], className = "chair-info"),
         html.A(["Home"], className = "BUTTON", href = "/")
     ], className = "conference-words flex-col-center")
 ], className = "conference-container")
