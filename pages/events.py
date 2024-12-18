@@ -15,7 +15,7 @@ layout = html.Div([
             html.Div([
                 html.Img(src = "/assets/events/journal.png", className = "event-img"),
                 html.Div(["Academic event where people present on a paper, a computing skill, or an experimental result! ", 
-                        html.A("Contact us", className = "underline", href = "/#contactus"),
+                        html.A("Contact us", className = "underline", href = "https://northwesternsiam.onrender.com/#contactus"),
                         " if you would like to present."])
             ], className = "event-example"), 
             html.Div([

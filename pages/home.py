@@ -167,7 +167,9 @@ layout = html.Div([
             # LAYER 5: EXTRA STATEMENT
             html.Div([
                 html.Div("Or directly email northwestern.siam.group@gmail.com.", className = "form-last-statement"),
-                html.Div("Can contact us on Instagram @siam_northwestern!", className = "form-last-statement")]),
+                html.Div("President: Siqiao Mu (siqiaomu2026@u.northwestern.edu).", className = "form-last-statement"), 
+                html.Div("Faculty Advisor: Adilson Motter (motter@northwestern.edu).", className = "form-last-statement"),
+                html.Div("Follow us on Instagram @siam_northwestern!", className = "form-last-statement"),]),
         ], className = "FORM", id = "contactus"),
         html.Div([
             html.Div([], className = "circle-end CIRCLE-END-0"),
